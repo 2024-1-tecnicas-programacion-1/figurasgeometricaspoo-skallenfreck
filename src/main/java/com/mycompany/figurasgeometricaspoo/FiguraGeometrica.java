@@ -1,6 +1,6 @@
 package com.mycompany.figurasgeometricaspoo;
 
-public class FiguraGeometrica {
+public abstract class FiguraGeometrica {
     private String nombre;
     private String color;
 
@@ -9,13 +9,7 @@ public class FiguraGeometrica {
         this.color = color;
     }
     
-    public double obtenerArea(){
-        
-    return 0;
-    }
+    public abstract double obtenerArea();
     
-    public double obtenerPerimetro(){
-    
-    return 0;
-    }
+    public abstract double obtenerPerimetro();
 }

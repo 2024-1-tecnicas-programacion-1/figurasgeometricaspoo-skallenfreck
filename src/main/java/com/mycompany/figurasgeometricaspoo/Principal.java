@@ -1,17 +1,4 @@
-<<<<<<< Updated upstream
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package com.mycompany.figurasgeometricaspoo;
 
-/**
- *
- * @author fresn
- */
-public class Principal {
-    
-=======
 package com.mycompany.figurasgeometricaspoo;
 
 import java.util.Scanner;
@@ -29,6 +16,7 @@ public class Principal {
         System.out.println("1: Circulo");
         System.out.println("2: Rectángulo");
         System.out.println("3: Triángulo");
+        System.out.println("4: Triángulo Isóceles");
         char figura = sc.next().charAt(0);
         switch (figura) {
             case '1':
@@ -56,9 +44,18 @@ public class Principal {
                 System.out.println("El area de "+nombre+" es: "+trianguloUno.obtenerArea());
                 System.out.println("El perimetro de "+nombre+ " es: "+trianguloUno.obtenerPerimetro());
                 break;
+            case '4':
+                System.out.println("Ingrese el valor de la base del triángulo");
+                double baseDos=sc.nextDouble();
+                System.out.println("Ingrese el valor de la altura del triángulo");
+                double alturaDos=sc.nextDouble();
+                System.out.println("Ingrese el valor de el lado");
+                double lado=sc.nextDouble();
+                TrianguloIsoceles trianguloDos=new TrianguloIsoceles(baseDos, alturaDos, lado, nombre, color);
+                System.out.println("El area de "+nombre+" es: "+trianguloDos.obtenerArea());
+                System.out.println("El perimetro de "+nombre+ " es: "+trianguloDos.obtenerPerimetro());
             default:
         }
 
     }
->>>>>>> Stashed changes
 }
